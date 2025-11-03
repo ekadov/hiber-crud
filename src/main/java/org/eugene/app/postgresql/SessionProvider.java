@@ -42,7 +42,7 @@ public enum SessionProvider {
     private SessionFactory initializeFactory() {
         Properties properties = new Properties();
         properties.setProperty(AvailableSettings.DIALECT, "org.hibernate.dialect.PostgreSQLDialect");
-        properties.setProperty(AvailableSettings.HBM2DDL_AUTO, "update");
+        properties.setProperty(AvailableSettings.HBM2DDL_AUTO, "none");
         properties.setProperty(AvailableSettings.AUTOCOMMIT, "true");
         properties.setProperty(AvailableSettings.USE_SECOND_LEVEL_CACHE, "false");
         properties.setProperty(AvailableSettings.ISOLATION, String.valueOf(Connection.TRANSACTION_READ_COMMITTED));
